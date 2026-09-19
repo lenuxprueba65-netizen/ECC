@@ -28,7 +28,7 @@
   --accent: #3b74ff;
   --accent-soft: rgba(59,116,255,.14);
   --accent-glow: rgba(59,116,255,.5);
-  --caliper: #b8402e;
+  --caliper: #c99a3c;
   --radius: 16px;
   --ease-out: cubic-bezier(.16,1,.3,1);
   --font-display: 'Big Shoulders Display', 'Arial Narrow', sans-serif;
@@ -472,6 +472,9 @@ section:not(.stage) { padding-block: 108px; position: relative; }
                   class="paint-panel" stroke="#0a0d13" stroke-width="4" stroke-linejoin="round"/>
             <path d="M228,330 C240,278 280,248 350,228 C392,204 432,188 480,182" fill="none" stroke="#0a0d13" stroke-width="2.5" stroke-dasharray="1 10" stroke-linecap="round" opacity=".7"/>
             <path d="M150,470 L1298,470" fill="none" stroke="#0a0d13" stroke-width="2" opacity=".35"/>
+            <path d="M150,420 L226,404 L226,420 C226,440 214,452 194,454 L162,452 C152,450 148,438 150,420 Z" fill="#0a0d13" opacity=".55"/>
+            <path d="M142,470 L226,458 L226,470 L150,480 Z" fill="#0a0d13" opacity=".72"/>
+            <path d="M1230,326 L1298,400" fill="none" stroke="#0a0d13" stroke-width="2" opacity=".3"/>
           </g>
 
           <!-- PUERTA -->
@@ -487,6 +490,7 @@ section:not(.stage) { padding-block: 108px; position: relative; }
             <path d="M186,368 C198,306 238,268 310,240 C356,214 400,196 448,188 L462,228 C412,244 374,264 344,296 C318,324 300,352 290,378 Z"
                   class="paint-panel" stroke="#0a0d13" stroke-width="3.5" stroke-linejoin="round"/>
             <path d="M310,268 L266,346 M354,236 L316,320" stroke="#0a0d13" stroke-width="2" opacity=".45" stroke-linecap="round"/>
+            <rect x="330" y="246" width="44" height="9" rx="4" fill="#0a0d13" opacity=".5" transform="rotate(-27 352 250)"/>
           </g>
 
           <!-- MOTOR RB26DETT -->
@@ -514,32 +518,48 @@ section:not(.stage) { padding-block: 108px; position: relative; }
               <circle cx="430" cy="560" r="95" fill="#0c0d10" stroke="#04050a" stroke-width="3"/>
               <circle cx="430" cy="560" r="52" fill="#3a4152" stroke="#5a6478" stroke-width="3"/>
               <circle cx="430" cy="560" r="12" fill="#7a8296"/>
-              <g stroke="#7a8296" stroke-width="6" stroke-linecap="round">
+              <g stroke="#7a8296" stroke-width="5.5" stroke-linecap="round">
                 <path d="M430,560 L430,516"/>
                 <path d="M430,560 L468,584"/>
                 <path d="M430,560 L468,536"/>
                 <path d="M430,560 L392,584"/>
                 <path d="M430,560 L392,536"/>
               </g>
+              <g stroke="#7a8296" stroke-width="4.5" stroke-linecap="round">
+                <path d="M421,516 L439,516"/>
+                <path d="M462,580 L474,588"/>
+                <path d="M462,540 L474,532"/>
+                <path d="M398,580 L386,588"/>
+                <path d="M398,540 L386,532"/>
+              </g>
+              <circle cx="430" cy="560" r="34" fill="none" stroke="#5a6478" stroke-width="2" opacity=".6"/>
             </g>
             <g>
               <circle cx="1080" cy="560" r="95" fill="#0c0d10" stroke="#04050a" stroke-width="3"/>
               <circle cx="1080" cy="560" r="52" fill="#3a4152" stroke="#5a6478" stroke-width="3"/>
               <circle cx="1080" cy="560" r="12" fill="#7a8296"/>
-              <g stroke="#7a8296" stroke-width="6" stroke-linecap="round">
+              <g stroke="#7a8296" stroke-width="5.5" stroke-linecap="round">
                 <path d="M1080,560 L1080,516"/>
                 <path d="M1080,560 L1118,584"/>
                 <path d="M1080,560 L1118,536"/>
                 <path d="M1080,560 L1042,584"/>
                 <path d="M1080,560 L1042,536"/>
               </g>
+              <g stroke="#7a8296" stroke-width="4.5" stroke-linecap="round">
+                <path d="M1071,516 L1089,516"/>
+                <path d="M1112,580 L1124,588"/>
+                <path d="M1112,540 L1124,532"/>
+                <path d="M1048,580 L1036,588"/>
+                <path d="M1048,540 L1036,532"/>
+              </g>
+              <circle cx="1080" cy="560" r="34" fill="none" stroke="#5a6478" stroke-width="2" opacity=".6"/>
             </g>
           </g>
 
           <!-- PINZAS DE FRENO -->
           <g id="frenos" class="part">
-            <rect x="404" y="538" width="40" height="26" rx="6" fill="var(--caliper)" stroke="#5c160c" stroke-width="2" transform="rotate(-18 424 551)"/>
-            <rect x="1054" y="538" width="40" height="26" rx="6" fill="var(--caliper)" stroke="#5c160c" stroke-width="2" transform="rotate(-18 1074 551)"/>
+            <rect x="404" y="538" width="40" height="26" rx="6" fill="var(--caliper)" stroke="#5a4310" stroke-width="2" transform="rotate(-18 424 551)"/>
+            <rect x="1054" y="538" width="40" height="26" rx="6" fill="var(--caliper)" stroke="#5a4310" stroke-width="2" transform="rotate(-18 1074 551)"/>
           </g>
 
           <!-- ALERON TRASERO -->
@@ -565,7 +585,10 @@ section:not(.stage) { padding-block: 108px; position: relative; }
 
           <!-- FAROS -->
           <g id="faros" class="part">
-            <path d="M154,378 C158,360 172,350 196,350 L206,392 L162,398 Z" fill="#e9edf5" stroke="#0a0d13" stroke-width="2" opacity=".92"/>
+            <path d="M150,368 C152,350 164,338 186,336 L214,340 C222,342 226,348 224,356 L214,392 C212,400 204,404 194,402 L160,394 C152,392 148,386 150,378 Z" fill="#eef2f8" stroke="#0a0d13" stroke-width="2"/>
+            <circle cx="190" cy="368" r="12" fill="#0a0d13" opacity=".82"/>
+            <circle cx="190" cy="368" r="5.5" fill="#cfe0ff"/>
+            <path d="M160,380 L214,362" stroke="#0a0d13" stroke-width="1.5" opacity=".35"/>
             <circle cx="1268" cy="374" r="11" fill="#c94b36" stroke="#0a0d13" stroke-width="2"/>
             <circle cx="1268" cy="400" r="11" fill="#c94b36" stroke="#0a0d13" stroke-width="2"/>
             <circle cx="1292" cy="374" r="11" fill="#c94b36" stroke="#0a0d13" stroke-width="2"/>
